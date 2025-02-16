@@ -26,4 +26,9 @@ public class InvoiceController {
         return invoiceService.getStatusForInvoice(id);
     }
 
+    @GetMapping("clear-status-for-all-invoices")
+    public void clearStatusesForAllInvoices() {
+        invoiceService.clearStatusesForAllInvoices();
+    }
+
 }

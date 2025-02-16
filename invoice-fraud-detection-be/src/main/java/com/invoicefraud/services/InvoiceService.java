@@ -3,6 +3,7 @@ package com.invoicefraud.services;
 import com.invoicefraud.models.Invoice;
 import com.invoicefraud.repositories.InvoiceRepository;
 import com.invoicefraud.types.InvoiceType;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,4 +35,8 @@ public class InvoiceService {
         }
     }
 
+    @Transactional
+    public void clearStatusesForAllInvoices() {
+        invoiceRepository.clearStatusesForAllInvoices();
+    }
 }
