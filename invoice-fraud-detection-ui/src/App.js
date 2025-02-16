@@ -1,10 +1,9 @@
 import './App.css';
+import Dashboard from "./table/Table";
 
 function App() {
   return (
-    <div className="App">
-      Invoice Fraud Detection
-    </div>
+    <Dashboard/>
   );
 }
 

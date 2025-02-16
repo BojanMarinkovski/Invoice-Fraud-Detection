@@ -1,0 +1,18 @@
+.table-wrapper {
+    padding: 50px 120px;
+    background: inherit;
+}
+
+table.table-style {
+    border: solid 2px #dbffd2 !important;
+}
+
+table thead tr th, table tbody tr:nth-child(even) th, table tbody tr:nth-child(even) td {
+    color: #dbffd2 !important;
+    background: #345737 !important;
+}
+
+table tbody tr:nth-child(odd) th, table tbody tr:nth-child(odd) td {
+    color: #dbffd2 !important;
+    background: rgba(52, 87, 55, 0.91) !important;
+}
