@@ -6,3 +6,6 @@ CREATE TABLE invoice_tbl
     status      VARCHAR(255)       NOT NULL,
     CONSTRAINT pk_invoice_tbl PRIMARY KEY (id)
 );
+
+ALTER TABLE invoice_tbl
+    MODIFY status VARCHAR (255) NULL;

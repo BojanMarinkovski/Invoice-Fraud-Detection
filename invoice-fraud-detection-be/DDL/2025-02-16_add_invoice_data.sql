@@ -39,3 +39,13 @@ VALUES
     ('Madison Jessica', FLOOR(RAND() * (40000 - 520 + 1)) + 520, 'OK'),
     ('Sophie Tracy', FLOOR(RAND() * (40000 - 520 + 1)) + 520, 'OK'),
     ('Charlotte Sarah', FLOOR(RAND() * (40000 - 520 + 1)) + 520, 'OK');
+
+
+
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE invoice_tbl
+SET status = NULL
+WHERE TRUE;
+
+SET SQL_SAFE_UPDATES = 1;

@@ -21,7 +21,6 @@ public class Invoice {
     private double sum;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private InvoiceType status;
 
 }

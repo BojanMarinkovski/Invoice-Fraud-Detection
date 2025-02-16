@@ -30,7 +30,6 @@ function Table() {
                     id={it.id}
                     debtorName={it.debtorName}
                     sum={it.sum}
-                    status={it.status}
                 />)}
             </tbody>
         </table>
